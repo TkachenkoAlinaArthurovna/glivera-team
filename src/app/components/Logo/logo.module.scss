@@ -1,0 +1,20 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  &__img {
+    margin-right: 8px;
+  }
+  &__name {
+    margin-bottom: 6px;
+    font-size: 26px;
+    font-weight: 600;
+    span {
+      margin-left: 4px;
+      font-size: 10px;
+      font-weight: 500;
+      color: #838383;
+    }
+  }
+}

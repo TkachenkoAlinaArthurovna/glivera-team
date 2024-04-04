@@ -1,0 +1,23 @@
+.menu {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    &__icon {
+      width: 30px;
+      height: 30px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
