@@ -1,16 +1,20 @@
 import Link from "next/link";
 import { useAppContext } from "@/app/context";
+import { useResize } from "@/app/helpers/useResize";
 
 import styles from "@/app/components/Sidebar/sidebar.module.scss";
 import Arrow from "@/app/components/Sidebar/menu-svg/Arrow";
 
 export default function ListItem({ href, svg, children, dashboard, active }) {
   const { isOpenSidebar, setIsOpenSidebar } = useAppContext();
+  const [width] = useResize();
 
   return (
     <li
       className={`${styles.sidebar__item} ${active && styles.active}`}
-      onClick={() => setIsOpenSidebar(!isOpenSidebar)}
+      onClick={
+        width < 1024 ? () => setIsOpenSidebar(!isOpenSidebar) : undefined
+      }
     >
       <Link
         href={href}

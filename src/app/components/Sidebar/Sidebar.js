@@ -1,7 +1,7 @@
 "use client";
 import { useAppContext } from "@/app/context";
 import { useResize } from "@/app/helpers/useResize";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import Logo from "@/app/components/Logo/Logo";
 import ListItem from "@/app/components/Sidebar/ListItem";

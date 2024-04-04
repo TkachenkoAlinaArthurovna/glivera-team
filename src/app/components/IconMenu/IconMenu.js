@@ -10,6 +10,7 @@ export default function IconMenu() {
   const { isOpenSidebar, setIsOpenSidebar } = useAppContext();
 
   useEffect(() => {
+    console.log(isOpenSidebar);
     if (!isOpenSidebar) {
       document.body.style.overflow = "hidden";
       document.body.style.height = "100vh";
