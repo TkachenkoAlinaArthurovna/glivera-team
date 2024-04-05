@@ -106,9 +106,14 @@
 }
 
 .profile {
+  position: fixed;
+  bottom: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  width: 278px;
+  padding: 20px 0 76px 0;
+  background-color: #ffffff;
   &__photo {
     width: 42px;
     height: 42px;

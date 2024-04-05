@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div>Dashboard</div>
+      <div className={styles.click}>Click on "Customers"</div>
     </main>
   );
 }
